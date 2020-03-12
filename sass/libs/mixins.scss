@@ -1,0 +1,38 @@
+@mixin menu_chic {
+    background: #fff5fe;
+}
+@mixin titre_chic {
+    font-family:'Croissant One';
+    font-size: 35px;
+    word-spacing: -4px;
+}
+@mixin sous_titre_chic {
+    font-family: 'Libre Baskerville';
+    color: #c77412;
+}
+@mixin menu_delice {
+    background: #f9f9f9;
+}
+
+@mixin titre_delice {
+    font-family:'Parisienne';
+    font-size: 50px;
+
+}
+@mixin sous_titre_delice {
+    font-family: 'Tillana';
+    color: #0887fb;
+}
+@mixin menu_palette {
+    background: #fdfffd;
+}
+
+@mixin titre_palette {
+    font-family:'Croissant One';
+    font-size: 40px;
+
+}
+@mixin sous_titre_palette {
+    font-family: 'Tillana';
+    color: #72bf56;
+}

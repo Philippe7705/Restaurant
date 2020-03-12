@@ -1,0 +1,18 @@
+@mixin chic{
+    background: linear-gradient(to right, #d8852e, #905bfd ); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin delice{
+    background: linear-gradient(to right,#0645e5, #1b91fa ); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin palette{
+    background: linear-gradient(to right,#42973c, #bfff7e); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
