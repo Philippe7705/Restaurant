@@ -237,3 +237,32 @@ header{
     
     }
 } 
+@media screen and (max-width: 666px){
+    header{
+        margin:0px;
+    }
+    
+    .logo{
+        
+        width: 100%;
+        margin: 10px;
+        }    
+    
+    a img{
+        width: 100%;
+        margin: 10px;
+    }
+    a{
+        margin:0%
+    }
+
+    .carte{
+        width: 70%;
+        .decor .trait{
+            width:34%;
+        }
+        ul .descrip {
+            text-align: center;
+          }
+    }
+}
