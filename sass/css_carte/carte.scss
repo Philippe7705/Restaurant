@@ -3,9 +3,9 @@
 @import "../libs/radiant.scss";
 
 
-$cd-couleur_fond_menu:#fefffe;
+$cd-couleur_fond_menu:#fcdfdb;
 $cd-police_titre1:'Tillana',cursive;
-$cd-police_titre:'Kaushan Script',cursive;
+$cd-police_titre:'Devonshire',cursive;
 
 
 body{
@@ -73,20 +73,29 @@ header{
         margin-bottom: 130px;
         padding-left: 30px;
         padding-right: 30px;
+        .pos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         .pos img{
-            display: none;
+            display: flex;
             flex-direction: column;
             width: 100%;
             justify-content: center;
+            align-content: center;
         } 
         
         .note{
             display: flex;
             justify-content: center;
+            
             img{
-                width:100%;
-                height: 100px;
-                padding-left: 58px;
+                width:60%;
+                height: 120px;
+                
+                margin-top: 20px;
+                
             }
            
         }   
@@ -94,18 +103,17 @@ header{
             display: flex;
             justify-content: center;
             font-family: $cd-police_titre;
-            line-height: 116px;
-            font-size: 38px;
-            margin-top: 10px;
-            margin-bottom: 30px;
-            @include palette;
+            font-size: 58px;
+            margin-top: 0px;
+            margin-bottom: 15px;
+            
         }   
         
     
     .entrée ,.plat ,.dessert{
        .trait{
-           width:20%;
-           height:15px;
+           width:85%;
+           height:45px;
        }
         .decor {
             display: flex;
@@ -120,7 +128,7 @@ header{
                 font-family: $cd-police_titre1;
                 font-weight: bold;
                 align-items: center;
-                width: 50%;
+                width: 60%;
                 justify-content: center;
                 
             }
@@ -133,7 +141,7 @@ header{
             flex-direction: column;
             margin-right: 0px;
             margin-left: 0px;
-            padding: 35px;
+            padding-bottom: 30px;
             li{
                 list-style: none;
                 display: flex;
@@ -216,4 +224,16 @@ header{
     @include transform-footer;
 }
     
+@media screen and (max-width: 768px){
+    .carte{
+        width: 87%;
+        ul.descrip{
+            padding-left: 23px;
+            padding-right: 23px;
+        }
+    }
+    .carte .decor .trait{
+        width:80%
     
+    }
+} 

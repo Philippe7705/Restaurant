@@ -67,43 +67,53 @@ header #search {
   padding-left: 30px;
   padding-right: 30px;
 }
+.carte .pos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .carte .pos img {
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: center;
-}
-.carte .pos1 img {
-  display: none;
+  align-content: center;
 }
 .carte .note {
   display: flex;
   justify-content: center;
 }
 .carte .note img {
-  width: 80%;
-  height: 100px;
-  padding-left: 58px;
+  width: 60%;
+  height: 120px;
+  margin-top: 20px;
 }
 .carte .titre {
   display: flex;
   justify-content: center;
   font-family: "Devonshire", cursive;
-  font-size: 40px;
-  margin: 0px;
+  font-size: 58px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+.carte .entrée .trait, .carte .plat .trait, .carte .dessert .trait {
+  width: 85%;
+  height: 45px;
 }
 .carte .entrée .decor, .carte .plat .decor, .carte .dessert .decor {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 .carte .entrée .decor .nom_entrée, .carte .entrée .decor .nom_plat, .carte .entrée .decor .nom_dessert, .carte .plat .decor .nom_entrée, .carte .plat .decor .nom_plat, .carte .plat .decor .nom_dessert, .carte .dessert .decor .nom_entrée, .carte .dessert .decor .nom_plat, .carte .dessert .decor .nom_dessert {
   display: flex;
   font-size: 24px;
-  font-family: "kalam", cursive;
+  line-height: 36px;
+  font-family: "Tillana", cursive;
   font-weight: bold;
   align-items: center;
-  width: 51%;
+  width: 60%;
   justify-content: center;
 }
 .carte .entrée ul.descrip, .carte .plat ul.descrip, .carte .dessert ul.descrip {
@@ -111,21 +121,22 @@ header #search {
   flex-direction: column;
   margin-right: 0px;
   margin-left: 0px;
-  padding: 20px;
+  padding-bottom: 30px;
 }
 .carte .entrée ul.descrip li, .carte .plat ul.descrip li, .carte .dessert ul.descrip li {
   list-style: none;
   display: flex;
   justify-content: space-between;
   margin: 0px;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 10px;
-  font-family: "kalam", cursive;
+  font-family: "Tillana", cursive;
+  font-size: 16px;
+  line-height: 32px;
 }
 .carte .entrée ul.descrip li span.prix, .carte .plat ul.descrip li span.prix, .carte .dessert ul.descrip li span.prix {
   display: flex;
   font-weight: bold;
-  font-family: "kalam", cursive;
 }
 
 .btn {
@@ -144,7 +155,7 @@ header #search {
 }
 
 .bas_carte {
-  display: flex;
+  display: none;
   height: 80px;
   justify-content: center;
 }
@@ -221,6 +232,20 @@ a:link {
   }
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carte {
+    width: 87%;
+  }
+  .carte ul.descrip {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+
+  .carte .decor .trait {
+    width: 80%;
   }
 }
 
