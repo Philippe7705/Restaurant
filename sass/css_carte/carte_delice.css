@@ -67,37 +67,42 @@ header #search {
   padding-left: 30px;
   padding-right: 30px;
 }
+.carte .pos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .carte .pos img {
   display: none;
   flex-direction: column;
   width: 100%;
   justify-content: center;
+  align-content: center;
 }
 .carte .note {
   display: flex;
   justify-content: center;
 }
 .carte .note img {
-  width: 80%;
-  height: 100px;
-  padding-left: 58px;
+  width: 60%;
+  height: 120px;
+  margin-top: 20px;
 }
 .carte .titre {
   display: flex;
   justify-content: center;
   font-family: "Parisienne", cursive;
-  line-height: 116px;
   font-size: 58px;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 15px;
   background: linear-gradient(to right, #0645e5, #1b91fa);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .carte .entrée .trait, .carte .plat .trait, .carte .dessert .trait {
-  width: 20%;
-  height: 15px;
+  width: 85%;
+  height: 45px;
 }
 .carte .entrée .decor, .carte .plat .decor, .carte .dessert .decor {
   display: flex;
@@ -109,18 +114,19 @@ header #search {
   display: flex;
   font-size: 24px;
   line-height: 36px;
-  font-family: "Tillana", cursive;
+  font-family: "Parisienne", cursive;
   font-weight: bold;
   align-items: center;
-  width: 50%;
+  width: 60%;
   justify-content: center;
+  text-align: center;
 }
 .carte .entrée ul.descrip, .carte .plat ul.descrip, .carte .dessert ul.descrip {
   display: flex;
   flex-direction: column;
   margin-right: 0px;
   margin-left: 0px;
-  padding: 35px;
+  padding-bottom: 30px;
 }
 .carte .entrée ul.descrip li, .carte .plat ul.descrip li, .carte .dessert ul.descrip li {
   list-style: none;
@@ -129,7 +135,7 @@ header #search {
   margin: 0px;
   margin-top: 0px;
   margin-bottom: 10px;
-  font-family: "Tillana", cursive;
+  font-family: "Parisienne", cursive;
   font-size: 16px;
   line-height: 32px;
 }
@@ -231,6 +237,69 @@ a:link {
   }
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carte {
+    width: 87%;
+  }
+  .carte ul.descrip {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .carte .titre {
+    margin-top: 20px;
+  }
+  .carte .entrée ul.descrip li, .carte .plat ul.descrip li, .carte .dessert ul.descrip li {
+    font-size: 20px;
+  }
+
+  .carte .decor .trait {
+    width: 30%;
+    height: 15px;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 666px) {
+  header {
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    width: 100%;
+    margin: 10px;
+  }
+
+  a img {
+    width: 100%;
+    margin: 10px;
+  }
+
+  a {
+    margin: 0%;
+  }
+
+  .carte {
+    width: 70%;
+  }
+  .carte .decor .trait {
+    width: 20%;
+    height: 15px;
+  }
+  .carte .titre {
+    font-size: 30px;
+  }
+  .carte .entrée li, .carte .plat li, .carte .dessert li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #bas p {
+    font-size: 20px;
   }
 }
 

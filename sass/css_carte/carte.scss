@@ -3,9 +3,25 @@
 @import "../libs/radiant.scss";
 
 
-$cd-couleur_fond_menu:#fcdfdb;
-$cd-police_titre1:'Tillana',cursive;
-$cd-police_titre:'Devonshire',cursive;
+$note-couleur_police:#3c1218;
+$note-couleur_fond_menu:#FCDFDB;
+$note-police_titre:'Devonshire',cursive;
+$note-police_sous_titre:'Tillana', cursive;
+
+$chic-couleur_police:#c77412;
+$chic-couleur_fond_menu:#fff5fe;
+$chic-police_titre:'Croissant One',cursive;
+$chic-police_sous_titre:'Libre Baskerville', cursive;
+
+$delice-couleur_police:#0887fb;
+$delice-couleur_fond_menu:#eef0f0;
+$delice-police_titre:'Parisienne',cursive;
+$delice-police_sous_titre:'Tillana', cursive;
+
+$palette-couleur_police:#72bf56;
+$palette-couleur_fond_menu:#fdfffd;
+$palette-police_titre:'Croissant One',cursive;
+$palette-police_sous_titre:'Tillana', cursive;
 
 
 body{
@@ -68,7 +84,7 @@ header{
         height: auto;
         margin: auto;
         justify-content: center;
-        background-color: $cd-couleur_fond_menu;
+        background-color: $delice-couleur_fond_menu;
         box-shadow: 0px 0px 5px #a1a1a1;
         margin-bottom: 130px;
         padding-left: 30px;
@@ -79,7 +95,7 @@ header{
             align-items: center;
         }
         .pos img{
-            display: flex;
+            display: none;
             flex-direction: column;
             width: 100%;
             justify-content: center;
@@ -102,11 +118,11 @@ header{
         .titre{
             display: flex;
             justify-content: center;
-            font-family: $cd-police_titre;
+            font-family: $delice-police_titre;
             font-size: 58px;
             margin-top: 0px;
             margin-bottom: 15px;
-            
+            @include delice;
         }   
         
     
@@ -125,7 +141,7 @@ header{
                 display: flex;
                 font-size: 24px;
                 line-height: 36px;
-                font-family: $cd-police_titre1;
+                font-family: $delice-police_titre;
                 font-weight: bold;
                 align-items: center;
                 width: 60%;
@@ -149,7 +165,7 @@ header{
                 margin: 0px;
                 margin-top: 0px;
                 margin-bottom: 10px;
-                font-family: $cd-police_titre1;
+                font-family: $delice-police_titre;
                 font-size: 16px;
                 line-height: 32px;
 
@@ -191,7 +207,7 @@ header{
             h3{
                margin-top: 5px;
                 font-size: 2rem;
-                font-family: $cd-police_titre;
+                font-family: $delice-police_titre;
                font-weight: bold; 
             }
         
@@ -228,14 +244,24 @@ header{
     .carte{
         width: 87%;
         ul.descrip{
-            padding-left: 23px;
-            padding-right: 23px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .titre{
+            margin-top:20px;
+        }    
+        .entrée,.plat,.dessert{
+            ul.descrip li{ 
+                font-size: 20px;
+            }
         }
     }
     .carte .decor .trait{
-        width:80%
-    
+        width:30%;
+        height:15px;
+        font-size: 24px;
     }
+
 } 
 @media screen and (max-width: 666px){
     header{
@@ -260,10 +286,11 @@ header{
     .carte{
         width: 70%;
         .decor .trait{
-            width:34%;
+            width:20%;
+            height:15px;
         }
         .titre{
-            font-size: 40px;
+            font-size: 30px;
         }
         .entrée li,.plat li,.dessert li{
             display: flex;
