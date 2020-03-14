@@ -115,6 +115,7 @@ header #search {
   align-items: center;
   width: 60%;
   justify-content: center;
+  text-align: center;
 }
 .carte .entrée ul.descrip, .carte .plat ul.descrip, .carte .dessert ul.descrip {
   display: flex;
@@ -251,6 +252,7 @@ a:link {
 @media screen and (max-width: 666px) {
   header {
     margin: 0px;
+    margin-bottom: 20px;
   }
 
   .logo {
@@ -273,8 +275,18 @@ a:link {
   .carte .decor .trait {
     width: 34%;
   }
-  .carte ul .descrip {
+  .carte .titre {
+    font-size: 40px;
+  }
+  .carte .entrée li, .carte .plat li, .carte .dessert li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+  }
+
+  #bas p {
+    font-size: 20px;
   }
 }
 
