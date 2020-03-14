@@ -54,6 +54,27 @@ header #search {
   height: 60px;
 }
 
+.titre h1 {
+  display: none;
+  margin-bottom: 0px;
+}
+
+.carte.chic {
+  background: #fff5fe;
+}
+
+.carte.enchant {
+  background: #FCDFDB;
+}
+
+.carte.delice {
+  background: #eef0f0;
+}
+
+.carte .palette {
+  background: #fdfffd;
+}
+
 .carte {
   display: flex;
   flex-direction: column;
@@ -61,41 +82,81 @@ header #search {
   height: auto;
   margin: auto;
   justify-content: center;
-  background-color: #fefffe;
   box-shadow: 0px 0px 5px #a1a1a1;
   margin-bottom: 130px;
   padding-left: 30px;
   padding-right: 30px;
+}
+.carte .pos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .carte .pos img {
   display: none;
   flex-direction: column;
   width: 100%;
   justify-content: center;
+  align-content: center;
 }
 .carte .note {
   display: flex;
   justify-content: center;
 }
 .carte .note img {
-  width: 100%;
-  height: 100px;
-  padding-left: 58px;
+  width: 60%;
+  height: 120px;
+  margin-top: 20px;
 }
-.carte .titre {
-  display: flex;
-  justify-content: center;
-  font-family: "Kaushan Script", cursive;
-  line-height: 116px;
-  font-size: 38px;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  background: linear-gradient(to right, #42973c, #bfff7e);
+.carte .titre.chic {
+  font-family: "Croissant One", cursive;
+  font-size: 48px;
+  background: linear-gradient(to right, #d8852e, #905bfd);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.carte .entrée .trait, .carte .plat .trait, .carte .dessert .trait {
+.carte .titre.palette {
+  font-family: "Croissant One", cursive;
+  background: linear-gradient(to right, #42973c, #bfff7e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+}
+.carte .titre.delice {
+  font-family: "Parisienne", cursive;
+  background: linear-gradient(to right, #0645e5, #1b91fa);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.carte .titre.enchant {
+  font-family: "Devonshire", cursive;
+}
+.carte .titre {
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.carte .entrée .trait.enchant, .carte .plat .trait.enchant, .carte .dessert .trait.enchant {
+  width: 20%;
+  height: 15px;
+}
+.carte .entrée .trait.chic, .carte .plat .trait.chic, .carte .dessert .trait.chic {
+  width: 15%;
+  height: 15px;
+}
+.carte .entrée .trait.delice, .carte .plat .trait.delice, .carte .dessert .trait.delice {
+  width: 20%;
+  height: 15px;
+}
+.carte .entrée .trait.palette, .carte .plat .trait.palette, .carte .dessert .trait.palette {
   width: 20%;
   height: 15px;
 }
@@ -105,22 +166,46 @@ header #search {
   justify-content: center;
   align-items: center;
 }
+.carte .entrée .decor .nom_entrée.chic, .carte .plat .decor .nom_entrée.chic, .carte .dessert .decor .nom_entrée.chic {
+  color: #c7750c;
+}
+.carte .entrée .decor .nom_plat.chic, .carte .plat .decor .nom_plat.chic, .carte .dessert .decor .nom_plat.chic {
+  color: #a6679a;
+}
+.carte .entrée .decor .nom_dessert.chic, .carte .plat .decor .nom_dessert.chic, .carte .dessert .decor .nom_dessert.chic {
+  color: #6e4bce;
+}
+.carte .entrée .decor .nom_entrée.chic, .carte .entrée .decor .nom_plat.chic, .carte .entrée .decor .nom_dessert.chic, .carte .plat .decor .nom_entrée.chic, .carte .plat .decor .nom_plat.chic, .carte .plat .decor .nom_dessert.chic, .carte .dessert .decor .nom_entrée.chic, .carte .dessert .decor .nom_plat.chic, .carte .dessert .decor .nom_dessert.chic {
+  font-family: "Croissant One", cursive;
+  font-size: 24px;
+}
+.carte .entrée .decor .nom_entrée.palette, .carte .entrée .decor .nom_plat.palette, .carte .entrée .decor .nom_dessert.palette, .carte .plat .decor .nom_entrée.palette, .carte .plat .decor .nom_plat.palette, .carte .plat .decor .nom_dessert.palette, .carte .dessert .decor .nom_entrée.palette, .carte .dessert .decor .nom_plat.palette, .carte .dessert .decor .nom_dessert.palette {
+  font-family: "Croissant One", cursive;
+  font-size: 24px;
+}
+.carte .entrée .decor .nom_entrée.delice, .carte .entrée .decor .nom_plat.delice, .carte .entrée .decor .nom_dessert.delice, .carte .plat .decor .nom_entrée.delice, .carte .plat .decor .nom_plat.delice, .carte .plat .decor .nom_dessert.delice, .carte .dessert .decor .nom_entrée.delice, .carte .dessert .decor .nom_plat.delice, .carte .dessert .decor .nom_dessert.delice {
+  font-family: "Parisienne", cursive;
+  font-size: 24px;
+}
+.carte .entrée .decor .nom_entrée.enchant, .carte .entrée .decor .nom_plat.enchant, .carte .entrée .decor .nom_dessert.enchant, .carte .plat .decor .nom_entrée.enchant, .carte .plat .decor .nom_plat.enchant, .carte .plat .decor .nom_dessert.enchant, .carte .dessert .decor .nom_entrée.enchant, .carte .dessert .decor .nom_plat.enchant, .carte .dessert .decor .nom_dessert.enchant {
+  font-family: "Devonshire", cursive;
+  font-size: 30px;
+}
 .carte .entrée .decor .nom_entrée, .carte .entrée .decor .nom_plat, .carte .entrée .decor .nom_dessert, .carte .plat .decor .nom_entrée, .carte .plat .decor .nom_plat, .carte .plat .decor .nom_dessert, .carte .dessert .decor .nom_entrée, .carte .dessert .decor .nom_plat, .carte .dessert .decor .nom_dessert {
   display: flex;
-  font-size: 24px;
   line-height: 36px;
-  font-family: "Tillana", cursive;
   font-weight: bold;
   align-items: center;
-  width: 50%;
+  width: 60%;
   justify-content: center;
+  text-align: center;
 }
 .carte .entrée ul.descrip, .carte .plat ul.descrip, .carte .dessert ul.descrip {
   display: flex;
   flex-direction: column;
   margin-right: 0px;
   margin-left: 0px;
-  padding: 35px;
+  padding-bottom: 30px;
 }
 .carte .entrée ul.descrip li, .carte .plat ul.descrip li, .carte .dessert ul.descrip li {
   list-style: none;
@@ -129,7 +214,7 @@ header #search {
   margin: 0px;
   margin-top: 0px;
   margin-bottom: 10px;
-  font-family: "Tillana", cursive;
+  font-family: "Croissant One", cursive;
   font-size: 16px;
   line-height: 32px;
 }
@@ -165,7 +250,7 @@ header #search {
 .bas_carte h3 {
   margin-top: 5px;
   font-size: 2rem;
-  font-family: "Kaushan Script", cursive;
+  font-family: "Parisienne", cursive;
   font-weight: bold;
 }
 
@@ -231,6 +316,98 @@ a:link {
   }
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carte {
+    width: 87%;
+  }
+  .carte ul.descrip {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .carte .titre {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .carte .entrée ul.descrip li, .carte .plat ul.descrip li, .carte .dessert ul.descrip li {
+    font-size: 20px;
+  }
+
+  .carte .decor .trait {
+    width: 30%;
+    height: 10px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 666px) {
+  header {
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    width: 100%;
+    margin: 10px;
+  }
+
+  a img {
+    width: 100%;
+    margin: 10px;
+  }
+
+  a {
+    margin: 0%;
+  }
+
+  .carte.chic .decor .nom_entrée.chic, .carte.chic .decor .nom_plat.chic, .carte.chic .decor .nom_dessert.chic, .carte.palette .decor .nom_entrée.chic, .carte.palette .decor .nom_plat.chic, .carte.palette .decor .nom_dessert.chic, .carte.enchant .decor .nom_entrée.chic, .carte.enchant .decor .nom_plat.chic, .carte.enchant .decor .nom_dessert.chic, .carte.delice .decor .nom_entrée.chic, .carte.delice .decor .nom_plat.chic, .carte.delice .decor .nom_dessert.chic {
+    font-size: 16px;
+  }
+  .carte.chic .decor .nom_entrée.palette, .carte.chic .decor .nom_plat.palette, .carte.chic .decor .nom_dessert.palette, .carte.palette .decor .nom_entrée.palette, .carte.palette .decor .nom_plat.palette, .carte.palette .decor .nom_dessert.palette, .carte.enchant .decor .nom_entrée.palette, .carte.enchant .decor .nom_plat.palette, .carte.enchant .decor .nom_dessert.palette, .carte.delice .decor .nom_entrée.palette, .carte.delice .decor .nom_plat.palette, .carte.delice .decor .nom_dessert.palette {
+    font-size: 18px;
+  }
+  .carte.chic .decor .nom_entrée.delice, .carte.chic .decor .nom_plat.delice, .carte.chic .decor .nom_dessert.delice, .carte.palette .decor .nom_entrée.delice, .carte.palette .decor .nom_plat.delice, .carte.palette .decor .nom_dessert.delice, .carte.enchant .decor .nom_entrée.delice, .carte.enchant .decor .nom_plat.delice, .carte.enchant .decor .nom_dessert.delice, .carte.delice .decor .nom_entrée.delice, .carte.delice .decor .nom_plat.delice, .carte.delice .decor .nom_dessert.delice {
+    font-size: 16px;
+  }
+  .carte.chic .decor .nom_entrée.enchant, .carte.chic .decor .nom_plat.enchant, .carte.chic .decor .nom_dessert.enchant, .carte.palette .decor .nom_entrée.enchant, .carte.palette .decor .nom_plat.enchant, .carte.palette .decor .nom_dessert.enchant, .carte.enchant .decor .nom_entrée.enchant, .carte.enchant .decor .nom_plat.enchant, .carte.enchant .decor .nom_dessert.enchant, .carte.delice .decor .nom_entrée.enchant, .carte.delice .decor .nom_plat.enchant, .carte.delice .decor .nom_dessert.enchant {
+    font-size: 24px;
+  }
+
+  .carte {
+    width: 70%;
+  }
+  .carte .decor .trait.chic {
+    width: 20%;
+    height: 15px;
+  }
+  .carte .titre.delice {
+    font-size: 32px;
+  }
+  .carte .titre.palette {
+    font-size: 25px;
+  }
+  .carte .titre.chic {
+    font-size: 22px;
+  }
+  .carte .titre.enchant {
+    font-size: 32px;
+  }
+  .carte .entrée ul.descrip li, .carte .plat ul.descrip li, .carte .dessert ul.descrip li {
+    font-size: 16px;
+  }
+  .carte .entrée li, .carte .plat li, .carte .dessert li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .carte .entrée li span, .carte .plat li span, .carte .dessert li span {
+    font-size: 16px;
+  }
+
+  #bas p {
+    font-size: 20px;
   }
 }
 
