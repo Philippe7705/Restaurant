@@ -6,7 +6,7 @@
 $enchant-couleur_police:#3c1218;
 $enchant-couleur_fond_menu:#FCDFDB;
 $enchant-police_titre:'Devonshire',cursive;
-$enchant-police_sous_titre:'Devonshire', cursive;
+$enchant-police_sous_titre:'Kurale', cursive;
 
 $chic-couleur_police:#c77412;
 $chic-couleur_fond_menu:#fff5fe;
@@ -23,7 +23,7 @@ $delice-police_sous_titre:'Tillana', cursive;
 
 $palette-couleur_police:#72bf56;
 $palette-couleur_fond_menu:#fdfffd;
-$palette-police_titre:'Croissant One',cursive;
+$palette-police_titre:'Kaushan Script',cursive;
 $palette-police_sous_titre:'Tillana', cursive;
 
 
@@ -88,6 +88,7 @@ header{
     }
     .carte.chic{        
         background: $chic-couleur_fond_menu;
+        
         }
     .carte.enchant{
         background: $enchant-couleur_fond_menu;
@@ -101,7 +102,7 @@ header{
     .carte{
         display: flex;
         flex-direction: column;
-        width: 36%;
+        width: 33%;
         height: auto;
         margin: auto;
         justify-content: center;
@@ -129,7 +130,7 @@ header{
             
             img{
                 width:60%;
-                height: 120px;
+                height: 100px;
                 
                 margin-top: 20px;
                 
@@ -145,6 +146,7 @@ header{
             font-family: $palette-police_titre;
             @include palette;
             font-size:48px;
+            
         }
         .titre.delice{
             font-family: $delice-police_titre;
@@ -155,6 +157,8 @@ header{
         }
         .titre.enchant{
             font-family: $enchant-police_titre;
+            font-size:48px;
+            margin-top: 0px;
         }
            
         .titre{
@@ -167,19 +171,19 @@ header{
         
         .entrée ,.plat ,.dessert{
             .trait.enchant{
-                width:20%;
-                height:15px;
+                width:60%;
+                height:55px;
             }
             .trait.chic{
-                width:15%;
+                width:25%;
                 height:15px;
             }
             .trait.delice{
-                width:20%;
+                width:25%;
                 height:15px;
             }
             .trait.palette{
-                width:20%;
+                width:30%;
                 height:15px;
             }
 
@@ -191,6 +195,7 @@ header{
             align-items: center;
             .nom_entrée.chic {
                 color: $couleur_police_titre_nom_entrée;
+                
             }
             .nom_plat.chic{
                 color: $couleur_police_titre_nom_plat;
@@ -199,21 +204,21 @@ header{
                 color:$couleur_police_titre_nom_dessert;
             }
             .nom_entrée.chic,.nom_plat.chic,.nom_dessert.chic{
-                    font-family: $chic-police_titre;
+                    font-family: $chic-police_sous_titre;
                     font-size: 24px;
                     
                 }
             .nom_entrée.palette,.nom_plat.palette,.nom_dessert.palette{
-                    font-family: $palette-police_titre;
+                    font-family: $palette-police_sous_titre;
                     font-size: 24px;
                 }
             .nom_entrée.delice,.nom_plat.delice,.nom_dessert.delice{
-                    font-family: $delice-police_titre;
+                    font-family: $delice-police_sous_titre;
                     font-size: 24px;
                 }
             .nom_entrée.enchant,.nom_plat.enchant,.nom_dessert.enchant{
-                    font-family: $enchant-police_titre;
-                    font-size: 30px;
+                    font-family: $enchant-police_sous_titre;
+                    font-size: 1.5rem;
                 }
             .nom_entrée,.nom_plat,.nom_dessert{
                 display: flex;
@@ -254,7 +259,20 @@ header{
         }
     }
 }    
-        
+     .carte.chic{
+        .entrée ul.descrip li{
+             color: $couleur_police_titre_nom_entrée;
+             padding-right: 20px;
+        }
+        .plat ul.descrip li{
+            color: $couleur_police_titre_nom_plat;
+            padding-right: 20px;
+        }
+        .dessert ul.descrip li{
+            color: $couleur_police_titre_nom_dessert;
+        }
+     }
+
     
     .btn{
         display: flex;
@@ -327,10 +345,13 @@ header{
         .titre{
             margin-top:20px;
             margin-bottom: 30px;
+           
         }    
         .entrée,.plat,.dessert{
             ul.descrip li{ 
-                font-size: 20px;
+                font-size: 16px;
+                padding-left: 20px;
+                padding-right: 20px;
             }
         }
     }
@@ -372,7 +393,7 @@ header{
             font-size: 16px;
         }
         .nom_entrée.enchant,.nom_plat.enchant,.nom_dessert.enchant{
-            font-size: 24px;
+            font-size: 16px;
         }
     }
 }
@@ -384,6 +405,13 @@ header{
             .trait.chic{
             width:20%;
             height:15px;}
+            
+            .trait.enchant{
+                width: 25%;
+            }
+            .trait.delice{
+                width: 18%;
+            }
         }
         .titre.delice{
             font-size: 32px;
@@ -400,7 +428,8 @@ header{
         
         .entrée,.plat,.dessert{
         ul.descrip li{
-            font-size: 16px;
+            font-size: 14px;
+            
         }
         }
         .entrée li,.plat li,.dessert li{
@@ -409,7 +438,7 @@ header{
             align-items: center;
             text-align: center;
         span{
-            font-size: 16px;
+            font-size: 14px;
         }
         }
         }

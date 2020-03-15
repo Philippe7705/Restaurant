@@ -78,7 +78,7 @@ header #search {
 .carte {
   display: flex;
   flex-direction: column;
-  width: 36%;
+  width: 33%;
   height: auto;
   margin: auto;
   justify-content: center;
@@ -105,7 +105,7 @@ header #search {
 }
 .carte .note img {
   width: 60%;
-  height: 120px;
+  height: 100px;
   margin-top: 20px;
 }
 .carte .titre.chic {
@@ -136,6 +136,8 @@ header #search {
 }
 .carte .titre.enchant {
   font-family: "Devonshire", cursive;
+  font-size: 48px;
+  margin-top: 0px;
 }
 .carte .titre {
   display: flex;
@@ -145,15 +147,15 @@ header #search {
   margin-bottom: 50px;
 }
 .carte .entrée .trait.enchant, .carte .plat .trait.enchant, .carte .dessert .trait.enchant {
-  width: 20%;
-  height: 15px;
+  width: 60%;
+  height: 55px;
 }
 .carte .entrée .trait.chic, .carte .plat .trait.chic, .carte .dessert .trait.chic {
-  width: 15%;
+  width: 25%;
   height: 15px;
 }
 .carte .entrée .trait.delice, .carte .plat .trait.delice, .carte .dessert .trait.delice {
-  width: 20%;
+  width: 25%;
   height: 15px;
 }
 .carte .entrée .trait.palette, .carte .plat .trait.palette, .carte .dessert .trait.palette {
@@ -176,20 +178,20 @@ header #search {
   color: #6e4bce;
 }
 .carte .entrée .decor .nom_entrée.chic, .carte .entrée .decor .nom_plat.chic, .carte .entrée .decor .nom_dessert.chic, .carte .plat .decor .nom_entrée.chic, .carte .plat .decor .nom_plat.chic, .carte .plat .decor .nom_dessert.chic, .carte .dessert .decor .nom_entrée.chic, .carte .dessert .decor .nom_plat.chic, .carte .dessert .decor .nom_dessert.chic {
-  font-family: "Croissant One", cursive;
+  font-family: "Libre-Baskerville", cursive;
   font-size: 24px;
 }
 .carte .entrée .decor .nom_entrée.palette, .carte .entrée .decor .nom_plat.palette, .carte .entrée .decor .nom_dessert.palette, .carte .plat .decor .nom_entrée.palette, .carte .plat .decor .nom_plat.palette, .carte .plat .decor .nom_dessert.palette, .carte .dessert .decor .nom_entrée.palette, .carte .dessert .decor .nom_plat.palette, .carte .dessert .decor .nom_dessert.palette {
-  font-family: "Croissant One", cursive;
+  font-family: "Tillana", cursive;
   font-size: 24px;
 }
 .carte .entrée .decor .nom_entrée.delice, .carte .entrée .decor .nom_plat.delice, .carte .entrée .decor .nom_dessert.delice, .carte .plat .decor .nom_entrée.delice, .carte .plat .decor .nom_plat.delice, .carte .plat .decor .nom_dessert.delice, .carte .dessert .decor .nom_entrée.delice, .carte .dessert .decor .nom_plat.delice, .carte .dessert .decor .nom_dessert.delice {
-  font-family: "Parisienne", cursive;
+  font-family: "Tillana", cursive;
   font-size: 24px;
 }
 .carte .entrée .decor .nom_entrée.enchant, .carte .entrée .decor .nom_plat.enchant, .carte .entrée .decor .nom_dessert.enchant, .carte .plat .decor .nom_entrée.enchant, .carte .plat .decor .nom_plat.enchant, .carte .plat .decor .nom_dessert.enchant, .carte .dessert .decor .nom_entrée.enchant, .carte .dessert .decor .nom_plat.enchant, .carte .dessert .decor .nom_dessert.enchant {
-  font-family: "Devonshire", cursive;
-  font-size: 30px;
+  font-family: "Kurale", cursive;
+  font-size: 1.5rem;
 }
 .carte .entrée .decor .nom_entrée, .carte .entrée .decor .nom_plat, .carte .entrée .decor .nom_dessert, .carte .plat .decor .nom_entrée, .carte .plat .decor .nom_plat, .carte .plat .decor .nom_dessert, .carte .dessert .decor .nom_entrée, .carte .dessert .decor .nom_plat, .carte .dessert .decor .nom_dessert {
   display: flex;
@@ -221,6 +223,18 @@ header #search {
 .carte .entrée ul.descrip li span.prix, .carte .plat ul.descrip li span.prix, .carte .dessert ul.descrip li span.prix {
   display: flex;
   font-weight: bold;
+}
+
+.carte.chic .entrée ul.descrip li {
+  color: #c7750c;
+  padding-right: 20px;
+}
+.carte.chic .plat ul.descrip li {
+  color: #a6679a;
+  padding-right: 20px;
+}
+.carte.chic .dessert ul.descrip li {
+  color: #6e4bce;
 }
 
 .btn {
@@ -332,7 +346,9 @@ a:link {
     margin-bottom: 30px;
   }
   .carte .entrée ul.descrip li, .carte .plat ul.descrip li, .carte .dessert ul.descrip li {
-    font-size: 20px;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .carte .decor .trait {
@@ -371,7 +387,7 @@ a:link {
     font-size: 16px;
   }
   .carte.chic .decor .nom_entrée.enchant, .carte.chic .decor .nom_plat.enchant, .carte.chic .decor .nom_dessert.enchant, .carte.palette .decor .nom_entrée.enchant, .carte.palette .decor .nom_plat.enchant, .carte.palette .decor .nom_dessert.enchant, .carte.enchant .decor .nom_entrée.enchant, .carte.enchant .decor .nom_plat.enchant, .carte.enchant .decor .nom_dessert.enchant, .carte.delice .decor .nom_entrée.enchant, .carte.delice .decor .nom_plat.enchant, .carte.delice .decor .nom_dessert.enchant {
-    font-size: 24px;
+    font-size: 16px;
   }
 
   .carte {
@@ -380,6 +396,12 @@ a:link {
   .carte .decor .trait.chic {
     width: 20%;
     height: 15px;
+  }
+  .carte .decor .trait.enchant {
+    width: 25%;
+  }
+  .carte .decor .trait.delice {
+    width: 18%;
   }
   .carte .titre.delice {
     font-size: 32px;
@@ -394,7 +416,7 @@ a:link {
     font-size: 32px;
   }
   .carte .entrée ul.descrip li, .carte .plat ul.descrip li, .carte .dessert ul.descrip li {
-    font-size: 16px;
+    font-size: 14px;
   }
   .carte .entrée li, .carte .plat li, .carte .dessert li {
     display: flex;
@@ -403,7 +425,7 @@ a:link {
     text-align: center;
   }
   .carte .entrée li span, .carte .plat li span, .carte .dessert li span {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   #bas p {

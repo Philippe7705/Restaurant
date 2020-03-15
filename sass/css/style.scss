@@ -104,7 +104,7 @@ header{
             }
         }              
         .menu.grow a{ transition: all .5s ease-in-out;margin:0; }
-        .menu.grow:hover a{ transform: scale(1.6); }
+        .menu.grow:hover a{ transform: scale(1.6); opacity: 0.5;}
 
             .titre{
                 font-size: 50px;

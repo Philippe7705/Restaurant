@@ -84,6 +84,7 @@ header #search {
 }
 #contener .menu.grow:hover a {
   transform: scale(1.6);
+  opacity: 0.5;
 }
 #contener .titre {
   font-size: 50px;
