@@ -80,10 +80,9 @@ header #search {
 }
 #contener .menu.grow a {
   transition: all 0.5s ease-in-out;
-  margin: 0;
 }
 #contener .menu.grow:hover a {
-  transform: scale(1.6);
+  transform: scale(1.4);
   opacity: 0.5;
 }
 #contener .titre {
@@ -211,7 +210,7 @@ header #search {
   font-size: 25px;
 }
 
-a:link {
+#bas a:link {
   text-decoration: none;
   margin-right: 20px;
 }
@@ -256,33 +255,36 @@ a:link {
   }
 }
 
-@media screen and (max-width: 1080px) {
+@media all and (max-width: 1080px) {
   #contener {
     width: 100%;
   }
+  #contener .menu.grow a {
+    transition: all 0.5s ease-in-out;
+  }
   #contener .menu.grow:hover a {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
   #contener .menu {
     height: 500px;
     width: 44%;
   }
 }
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
   #contener {
     width: 100%;
   }
+  #contener .menu.grow a {
+    transition: all 0.5s ease-in-out;
+  }
   #contener .menu.grow:hover a {
     transform: scale(1.1);
-  }
-  #contener .menu {
-    width: 44%;
   }
   #contener .chic .titre {
     font-size: 27px;
   }
 }
-@media screen and (max-width: 666px) {
+@media all and (max-width: 666px) {
   header {
     margin: 0px;
   }
@@ -292,20 +294,24 @@ a:link {
     margin: 10px;
   }
 
-  a img {
-    width: 100%;
-    margin: 10px;
+  #contener .menu.grow a {
+    transition: all 0.5s ease-in-out;
   }
-
-  a {
-    margin: 0%;
+  #contener .menu.grow:hover a {
+    transform: scale(1.1);
   }
-
-  #contener {
-    margin-top: 20px;
+  #contener .note {
+    margin-left: 33px;
   }
   #contener .menu {
     width: 90%;
+    margin-top: 20px;
+  }
+  #contener .titre {
+    font-size: 40px;
+  }
+  #contener .menu.chic .titre, #contener .menu.palette .titre, #contener menu.delice .titre {
+    font-size: 25px;
   }
 
   #bas p {

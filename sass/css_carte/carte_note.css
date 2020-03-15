@@ -78,7 +78,7 @@ header #search {
 .carte {
   display: flex;
   flex-direction: column;
-  width: 36%;
+  width: 56%;
   height: auto;
   margin: auto;
   justify-content: center;
@@ -117,7 +117,7 @@ header #search {
   -webkit-text-fill-color: transparent;
 }
 .carte .titre.palette {
-  font-family: "Croissant One", cursive;
+  font-family: "Kaushan Script", cursive;
   background: linear-gradient(to right, #42973c, #bfff7e);
   background-clip: text;
   -webkit-background-clip: text;
@@ -151,15 +151,15 @@ header #search {
   height: 55px;
 }
 .carte .entrée .trait.chic, .carte .plat .trait.chic, .carte .dessert .trait.chic {
-  width: 15%;
+  width: 25%;
   height: 15px;
 }
 .carte .entrée .trait.delice, .carte .plat .trait.delice, .carte .dessert .trait.delice {
-  width: 20%;
+  width: 25%;
   height: 15px;
 }
 .carte .entrée .trait.palette, .carte .plat .trait.palette, .carte .dessert .trait.palette {
-  width: 20%;
+  width: 30%;
   height: 15px;
 }
 .carte .entrée .decor, .carte .plat .decor, .carte .dessert .decor {
@@ -223,6 +223,18 @@ header #search {
 .carte .entrée ul.descrip li span.prix, .carte .plat ul.descrip li span.prix, .carte .dessert ul.descrip li span.prix {
   display: flex;
   font-weight: bold;
+}
+
+.carte.chic .entrée ul.descrip li {
+  color: #c7750c;
+  padding-right: 20px;
+}
+.carte.chic .plat ul.descrip li {
+  color: #a6679a;
+  padding-right: 20px;
+}
+.carte.chic .dessert ul.descrip li {
+  color: #6e4bce;
 }
 
 .btn {
@@ -388,6 +400,9 @@ a:link {
   .carte .decor .trait.enchant {
     width: 25%;
   }
+  .carte .decor .trait.delice {
+    width: 18%;
+  }
   .carte .titre.delice {
     font-size: 32px;
   }
@@ -401,7 +416,7 @@ a:link {
     font-size: 32px;
   }
   .carte .entrée ul.descrip li, .carte .plat ul.descrip li, .carte .dessert ul.descrip li {
-    font-size: 16px;
+    font-size: 14px;
   }
   .carte .entrée li, .carte .plat li, .carte .dessert li {
     display: flex;
@@ -410,7 +425,7 @@ a:link {
     text-align: center;
   }
   .carte .entrée li span, .carte .plat li span, .carte .dessert li span {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   #bas p {

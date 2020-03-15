@@ -102,7 +102,7 @@ header{
     .carte{
         display: flex;
         flex-direction: column;
-        width: 33%;
+        width: 56%;
         height: auto;
         margin: auto;
         justify-content: center;
@@ -117,7 +117,7 @@ header{
             align-items: center;
         }
         .pos img{
-            display: none;
+            display: flex;
             flex-direction: column;
             width: 100%;
             justify-content: center;
@@ -289,7 +289,7 @@ header{
         }       
     }
     .bas_carte{
-        display: none;
+        display: flex;
         height: 80px;
         justify-content: center;
         
