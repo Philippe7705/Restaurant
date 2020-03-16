@@ -110,7 +110,13 @@ header{
         margin-bottom: 130px;
         padding-left: 30px;
         padding-right: 30px;
-        
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            
+            @include soulignement;}
+
         .pos{
             display: flex;
             flex-direction: column;
@@ -123,10 +129,6 @@ header{
             justify-content: center;
             align-content: center;
         } 
-        &.chic,&.delice,&.palette{
-            .pos img{
-                display: none;
-            }
         }
         .note{
             display: flex;
@@ -172,8 +174,8 @@ header{
             margin-top: 60px;
             margin-bottom: 50px;
         }   
-        
-        .entrée ,.plat ,.dessert{
+            .entrée ,.plat ,.dessert{
+           
             .trait.enchant{
                 width:60%;
                 height:55px;
@@ -197,9 +199,10 @@ header{
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            
             .nom_entrée.chic {
                 color: $couleur_police_titre_nom_entrée;
-                
+               
             }
             .nom_plat.chic{
                 color: $couleur_police_titre_nom_plat;
@@ -232,10 +235,11 @@ header{
                 width: 60%;
                 justify-content: center;
                 text-align: center;
+                @include soulignement;
             }
             
         } 
-    }       
+    } 
     .entrée ,.plat ,.dessert{
         ul.descrip{
             display: flex;
@@ -262,7 +266,7 @@ header{
             }
         }
     }
-}    
+    
      .carte.chic{
         .entrée ul.descrip li{
              color: $couleur_police_titre_nom_entrée;
@@ -331,12 +335,12 @@ header{
             font-size: 25px;
             margin: 0px;
         }
-        
-    }
-        a:link{
+         a:link{
             text-decoration: none;
             margin-right: 20px;
 }
+    }
+      
 #bas p:hover{
     @include transform-footer;
 }
@@ -403,8 +407,6 @@ header{
         }
     }
 }
-    
-    
     .carte{
         width: 70%;
         .decor {

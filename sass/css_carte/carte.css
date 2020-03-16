@@ -87,6 +87,18 @@ header #search {
   padding-left: 30px;
   padding-right: 30px;
 }
+.carte a {
+  text-decoration: none;
+}
+.carte a:hover a {
+  color: inherit;
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.carte a:hover a:hover {
+  background-size: 100% 100%;
+}
 .carte .pos {
   display: flex;
   flex-direction: column;
@@ -99,19 +111,18 @@ header #search {
   justify-content: center;
   align-content: center;
 }
-.carte.chic .pos img, .carte.delice .pos img, .carte.palette .pos img {
-  display: none;
-}
-.carte .note {
+
+.note {
   display: flex;
   justify-content: center;
 }
-.carte .note img {
+.note img {
   width: 60%;
   height: 100px;
   margin-top: 20px;
 }
-.carte .titre.chic {
+
+.titre.chic {
   font-family: "Croissant One", cursive;
   font-size: 48px;
   background: linear-gradient(to right, #d8852e, #905bfd);
@@ -119,7 +130,8 @@ header #search {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.carte .titre.palette {
+
+.titre.palette {
   font-family: "Kaushan Script", cursive;
   background: linear-gradient(to right, #42973c, #bfff7e);
   background-clip: text;
@@ -127,7 +139,8 @@ header #search {
   -webkit-text-fill-color: transparent;
   font-size: 48px;
 }
-.carte .titre.delice {
+
+.titre.delice {
   font-family: "Parisienne", cursive;
   background: linear-gradient(to right, #0645e5, #1b91fa);
   background-clip: text;
@@ -137,66 +150,69 @@ header #search {
   margin-top: 40px;
   margin-bottom: 30px;
 }
-.carte .titre.enchant {
+
+.titre.enchant {
   font-family: "Devonshire", cursive;
   font-size: 48px;
   margin-top: 0px;
 }
-.carte .titre {
+
+.titre {
   display: flex;
   justify-content: center;
   font-size: 36px;
   margin-top: 60px;
   margin-bottom: 50px;
 }
-.carte .entrée .trait.enchant, .carte .plat .trait.enchant, .carte .dessert .trait.enchant {
+
+.entrée .trait.enchant, .plat .trait.enchant, .dessert .trait.enchant {
   width: 60%;
   height: 55px;
 }
-.carte .entrée .trait.chic, .carte .plat .trait.chic, .carte .dessert .trait.chic {
+.entrée .trait.chic, .plat .trait.chic, .dessert .trait.chic {
   width: 25%;
   height: 15px;
 }
-.carte .entrée .trait.delice, .carte .plat .trait.delice, .carte .dessert .trait.delice {
+.entrée .trait.delice, .plat .trait.delice, .dessert .trait.delice {
   width: 25%;
   height: 15px;
 }
-.carte .entrée .trait.palette, .carte .plat .trait.palette, .carte .dessert .trait.palette {
+.entrée .trait.palette, .plat .trait.palette, .dessert .trait.palette {
   width: 30%;
   height: 15px;
 }
-.carte .entrée .decor, .carte .plat .decor, .carte .dessert .decor {
+.entrée .decor, .plat .decor, .dessert .decor {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.carte .entrée .decor .nom_entrée.chic, .carte .plat .decor .nom_entrée.chic, .carte .dessert .decor .nom_entrée.chic {
+.entrée .decor .nom_entrée.chic, .plat .decor .nom_entrée.chic, .dessert .decor .nom_entrée.chic {
   color: #c7750c;
 }
-.carte .entrée .decor .nom_plat.chic, .carte .plat .decor .nom_plat.chic, .carte .dessert .decor .nom_plat.chic {
+.entrée .decor .nom_plat.chic, .plat .decor .nom_plat.chic, .dessert .decor .nom_plat.chic {
   color: #a6679a;
 }
-.carte .entrée .decor .nom_dessert.chic, .carte .plat .decor .nom_dessert.chic, .carte .dessert .decor .nom_dessert.chic {
+.entrée .decor .nom_dessert.chic, .plat .decor .nom_dessert.chic, .dessert .decor .nom_dessert.chic {
   color: #6e4bce;
 }
-.carte .entrée .decor .nom_entrée.chic, .carte .entrée .decor .nom_plat.chic, .carte .entrée .decor .nom_dessert.chic, .carte .plat .decor .nom_entrée.chic, .carte .plat .decor .nom_plat.chic, .carte .plat .decor .nom_dessert.chic, .carte .dessert .decor .nom_entrée.chic, .carte .dessert .decor .nom_plat.chic, .carte .dessert .decor .nom_dessert.chic {
+.entrée .decor .nom_entrée.chic, .entrée .decor .nom_plat.chic, .entrée .decor .nom_dessert.chic, .plat .decor .nom_entrée.chic, .plat .decor .nom_plat.chic, .plat .decor .nom_dessert.chic, .dessert .decor .nom_entrée.chic, .dessert .decor .nom_plat.chic, .dessert .decor .nom_dessert.chic {
   font-family: "Libre-Baskerville", cursive;
   font-size: 24px;
 }
-.carte .entrée .decor .nom_entrée.palette, .carte .entrée .decor .nom_plat.palette, .carte .entrée .decor .nom_dessert.palette, .carte .plat .decor .nom_entrée.palette, .carte .plat .decor .nom_plat.palette, .carte .plat .decor .nom_dessert.palette, .carte .dessert .decor .nom_entrée.palette, .carte .dessert .decor .nom_plat.palette, .carte .dessert .decor .nom_dessert.palette {
+.entrée .decor .nom_entrée.palette, .entrée .decor .nom_plat.palette, .entrée .decor .nom_dessert.palette, .plat .decor .nom_entrée.palette, .plat .decor .nom_plat.palette, .plat .decor .nom_dessert.palette, .dessert .decor .nom_entrée.palette, .dessert .decor .nom_plat.palette, .dessert .decor .nom_dessert.palette {
   font-family: "Tillana", cursive;
   font-size: 24px;
 }
-.carte .entrée .decor .nom_entrée.delice, .carte .entrée .decor .nom_plat.delice, .carte .entrée .decor .nom_dessert.delice, .carte .plat .decor .nom_entrée.delice, .carte .plat .decor .nom_plat.delice, .carte .plat .decor .nom_dessert.delice, .carte .dessert .decor .nom_entrée.delice, .carte .dessert .decor .nom_plat.delice, .carte .dessert .decor .nom_dessert.delice {
+.entrée .decor .nom_entrée.delice, .entrée .decor .nom_plat.delice, .entrée .decor .nom_dessert.delice, .plat .decor .nom_entrée.delice, .plat .decor .nom_plat.delice, .plat .decor .nom_dessert.delice, .dessert .decor .nom_entrée.delice, .dessert .decor .nom_plat.delice, .dessert .decor .nom_dessert.delice {
   font-family: "Tillana", cursive;
   font-size: 24px;
 }
-.carte .entrée .decor .nom_entrée.enchant, .carte .entrée .decor .nom_plat.enchant, .carte .entrée .decor .nom_dessert.enchant, .carte .plat .decor .nom_entrée.enchant, .carte .plat .decor .nom_plat.enchant, .carte .plat .decor .nom_dessert.enchant, .carte .dessert .decor .nom_entrée.enchant, .carte .dessert .decor .nom_plat.enchant, .carte .dessert .decor .nom_dessert.enchant {
+.entrée .decor .nom_entrée.enchant, .entrée .decor .nom_plat.enchant, .entrée .decor .nom_dessert.enchant, .plat .decor .nom_entrée.enchant, .plat .decor .nom_plat.enchant, .plat .decor .nom_dessert.enchant, .dessert .decor .nom_entrée.enchant, .dessert .decor .nom_plat.enchant, .dessert .decor .nom_dessert.enchant {
   font-family: "Kurale", cursive;
   font-size: 1.5rem;
 }
-.carte .entrée .decor .nom_entrée, .carte .entrée .decor .nom_plat, .carte .entrée .decor .nom_dessert, .carte .plat .decor .nom_entrée, .carte .plat .decor .nom_plat, .carte .plat .decor .nom_dessert, .carte .dessert .decor .nom_entrée, .carte .dessert .decor .nom_plat, .carte .dessert .decor .nom_dessert {
+.entrée .decor .nom_entrée, .entrée .decor .nom_plat, .entrée .decor .nom_dessert, .plat .decor .nom_entrée, .plat .decor .nom_plat, .plat .decor .nom_dessert, .dessert .decor .nom_entrée, .dessert .decor .nom_plat, .dessert .decor .nom_dessert {
   display: flex;
   line-height: 36px;
   font-weight: bold;
@@ -205,14 +221,24 @@ header #search {
   justify-content: center;
   text-align: center;
 }
-.carte .entrée ul.descrip, .carte .plat ul.descrip, .carte .dessert ul.descrip {
+.entrée .decor .nom_entrée a, .entrée .decor .nom_plat a, .entrée .decor .nom_dessert a, .plat .decor .nom_entrée a, .plat .decor .nom_plat a, .plat .decor .nom_dessert a, .dessert .decor .nom_entrée a, .dessert .decor .nom_plat a, .dessert .decor .nom_dessert a {
+  color: inherit;
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.entrée .decor .nom_entrée a:hover, .entrée .decor .nom_plat a:hover, .entrée .decor .nom_dessert a:hover, .plat .decor .nom_entrée a:hover, .plat .decor .nom_plat a:hover, .plat .decor .nom_dessert a:hover, .dessert .decor .nom_entrée a:hover, .dessert .decor .nom_plat a:hover, .dessert .decor .nom_dessert a:hover {
+  background-size: 100% 100%;
+}
+
+.entrée ul.descrip, .plat ul.descrip, .dessert ul.descrip {
   display: flex;
   flex-direction: column;
   margin-right: 0px;
   margin-left: 0px;
   padding-bottom: 30px;
 }
-.carte .entrée ul.descrip li, .carte .plat ul.descrip li, .carte .dessert ul.descrip li {
+.entrée ul.descrip li, .plat ul.descrip li, .dessert ul.descrip li {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -223,7 +249,7 @@ header #search {
   font-size: 16px;
   line-height: 32px;
 }
-.carte .entrée ul.descrip li span.prix, .carte .plat ul.descrip li span.prix, .carte .dessert ul.descrip li span.prix {
+.entrée ul.descrip li span.prix, .plat ul.descrip li span.prix, .dessert ul.descrip li span.prix {
   display: flex;
   font-weight: bold;
 }
@@ -293,8 +319,7 @@ header #search {
   font-size: 25px;
   margin: 0px;
 }
-
-a:link {
+#bas a:link {
   text-decoration: none;
   margin-right: 20px;
 }
