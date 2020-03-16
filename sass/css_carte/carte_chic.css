@@ -78,7 +78,7 @@ header #search {
 .carte {
   display: flex;
   flex-direction: column;
-  width: 56%;
+  width: 43%;
   height: auto;
   margin: auto;
   justify-content: center;

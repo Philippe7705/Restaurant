@@ -102,7 +102,7 @@ header{
     .carte{
         display: flex;
         flex-direction: column;
-        width: 56%;
+        width: 43%;
         height: auto;
         margin: auto;
         justify-content: center;
@@ -123,7 +123,11 @@ header{
             justify-content: center;
             align-content: center;
         } 
-        
+        &.chic,&.delice,&.palette{
+            .pos img{
+                display: none;
+            }
+        }
         .note{
             display: flex;
             justify-content: center;
@@ -292,7 +296,9 @@ header{
         display: flex;
         height: 80px;
         justify-content: center;
-        
+        &.chic,&.palette,&.delice{
+            display: none;
+        }
         .note{
             
             width: 70px;

@@ -78,7 +78,7 @@ header #search {
 .carte {
   display: flex;
   flex-direction: column;
-  width: 56%;
+  width: 43%;
   height: auto;
   margin: auto;
   justify-content: center;
@@ -98,6 +98,9 @@ header #search {
   width: 100%;
   justify-content: center;
   align-content: center;
+}
+.carte.chic .pos img, .carte.delice .pos img, .carte.palette .pos img {
+  display: none;
 }
 .carte .note {
   display: flex;
@@ -256,6 +259,9 @@ header #search {
   display: flex;
   height: 80px;
   justify-content: center;
+}
+.bas_carte.chic, .bas_carte.palette, .bas_carte.delice {
+  display: none;
 }
 .bas_carte .note {
   width: 70px;
