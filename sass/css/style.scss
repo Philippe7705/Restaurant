@@ -215,10 +215,6 @@ header{
 @media all and (max-width: 1080px){
     #contener{
         width: 100%;
-        .menu.grow a{ transition: all .5s ease-in-out; }
-        .menu.grow:hover a{
-            transform: scale(1.2);
-        }
         .menu{
             height: 500px;
             width: 44%;
@@ -227,45 +223,25 @@ header{
 }
 @media all and (max-width: 768px){
 #contener{
-        width: 100%;
-        .menu.grow a { 
-            transition: all .5s ease-in-out; 
-        }
-    
-        .menu.grow:hover a {
-            transform: scale(1.1);
-        }
-        
         .chic .titre{
             font-size: 27px;
         }
     }
+    .menu.grow a{ transition: all 500s ease-in-out; }
+    .menu.grow a{ transform: scale(1.1); opacity: 0.5; } 
 }
 @media all and (max-width: 666px){
     header{
         margin:0px;
     }
-    
-    .logo{
-        
-        width: 100%;
-        margin: 10px;
-        }    
-    
-        
-    
+    #logo a img{
+        width: 95%;
+        margin:10px;
+    }
     #contener{
-        .menu.grow a { 
-            transition: all .5s ease-in-out;
-        }
-       
-        .menu.grow:hover a {
-            transform: scale(1.1);
-        }
         .note{
             margin-left: 33px;
         }
-    
     .menu{
         width: 90%;
         margin-top: 20px;

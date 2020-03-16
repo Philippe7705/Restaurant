@@ -341,7 +341,7 @@ header{
     @include transform-footer;
 }
     
-@media screen and (max-width: 768px){
+@media all and (max-width: 768px){
     .carte{
         width: 87%;
         ul.descrip{
@@ -368,7 +368,7 @@ header{
     }
 
 } 
-@media screen and (max-width: 666px){
+@media all and (max-width: 666px){
     header{
         margin:0px;
         margin-bottom: 20px;

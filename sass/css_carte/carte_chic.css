@@ -93,11 +93,14 @@ header #search {
   align-items: center;
 }
 .carte .pos img {
-  display: none;
+  display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: center;
   align-content: center;
+}
+.carte.chic .pos img, .carte.delice .pos img, .carte.palette .pos img {
+  display: none;
 }
 .carte .note {
   display: flex;
@@ -253,9 +256,12 @@ header #search {
 }
 
 .bas_carte {
-  display: none;
+  display: flex;
   height: 80px;
   justify-content: center;
+}
+.bas_carte.chic, .bas_carte.palette, .bas_carte.delice {
+  display: none;
 }
 .bas_carte .note {
   width: 70px;
@@ -333,7 +339,7 @@ a:link {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
   .carte {
     width: 87%;
   }
@@ -357,7 +363,7 @@ a:link {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 666px) {
+@media all and (max-width: 666px) {
   header {
     margin: 0px;
     margin-bottom: 20px;

@@ -259,29 +259,23 @@ header #search {
   #contener {
     width: 100%;
   }
-  #contener .menu.grow a {
-    transition: all 0.5s ease-in-out;
-  }
-  #contener .menu.grow:hover a {
-    transform: scale(1.2);
-  }
   #contener .menu {
     height: 500px;
     width: 44%;
   }
 }
 @media all and (max-width: 768px) {
-  #contener {
-    width: 100%;
-  }
-  #contener .menu.grow a {
-    transition: all 0.5s ease-in-out;
-  }
-  #contener .menu.grow:hover a {
-    transform: scale(1.1);
-  }
   #contener .chic .titre {
     font-size: 27px;
+  }
+
+  .menu.grow a {
+    transition: all 500s ease-in-out;
+  }
+
+  .menu.grow a {
+    transform: scale(1.1);
+    opacity: 0.5;
   }
 }
 @media all and (max-width: 666px) {
@@ -289,17 +283,11 @@ header #search {
     margin: 0px;
   }
 
-  .logo {
-    width: 100%;
+  #logo a img {
+    width: 95%;
     margin: 10px;
   }
 
-  #contener .menu.grow a {
-    transition: all 0.5s ease-in-out;
-  }
-  #contener .menu.grow:hover a {
-    transform: scale(1.1);
-  }
   #contener .note {
     margin-left: 33px;
   }

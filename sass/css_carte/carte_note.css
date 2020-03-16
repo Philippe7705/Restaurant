@@ -339,7 +339,7 @@ a:link {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
   .carte {
     width: 87%;
   }
@@ -363,7 +363,7 @@ a:link {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 666px) {
+@media all and (max-width: 666px) {
   header {
     margin: 0px;
     margin-bottom: 20px;
