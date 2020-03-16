@@ -1,3 +1,11 @@
+$soulign_sous_titre_chic1: rgba(216, 133, 46, 1)  0%,rgba(216, 133, 46, 1) 10%;
+$soulign_sous_titre_chic2: rgba(166, 103, 154, 1)  0%,rgba(166, 103, 154, 1) 10%;
+$soulign_sous_titre_chic3: rgba(110, 75, 206, 1)  0%,rgba(110, 75, 206, 1) 10%;
+
+$soulign_sous_titre_delice:rgba(6, 69, 229, 1) 0%, rgba(27, 145, 250, 1) 10%;
+$soulign_sous_titre_palette:rgba(66, 151, 60, 1) 0%, rgba(66, 151, 60, 1) 10%;
+$soulign_sous_titre_enchant:rgba(60, 18, 24, 1) 0%, rgba(60, 18, 24, 1) 10%;
+
 @mixin transform-btn {
   .points {
     
@@ -45,11 +53,11 @@
         100% { transform: translate(1px, -2px) rotate(-1deg); }
     }    
 }
-@mixin soulignement{
-  a { 
+@mixin soulignement_chic1{
+  a{ 
         color: inherit;
         text-decoration: none;
-        background: linear-gradient(to top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+        background: linear-gradient(to top,$soulign_sous_titre_chic1,transparent 10.01%) no-repeat left bottom / 0 100%;
         transition: background-size .5s;
       }
   
@@ -57,4 +65,65 @@
         background-size: 100% 100%;
       }
     }
-    
+@mixin soulignement_chic2{
+  a { 
+        color: inherit;
+        text-decoration: none;
+        background: linear-gradient(to top,$soulign_sous_titre_chic2,transparent 10.01%) no-repeat left bottom / 0 100%;
+        transition: background-size .5s;
+      }
+  
+  a:hover{
+        background-size: 100% 100%;
+      }
+}
+@mixin soulignement_chic3{
+  a { 
+        color: inherit;
+        text-decoration: none;
+        background: linear-gradient(to top,$soulign_sous_titre_chic3,transparent 99.01%) no-repeat left bottom / 0 100%;
+        transition: background-size .5s;
+      }
+  
+  a:hover{
+        background-size: 100% 100%;
+      }
+    }
+@mixin soulignement_palette{
+      a { 
+            color: inherit;
+            text-decoration: none;
+            background: linear-gradient(to top,$soulign_sous_titre_palette,transparent 10.01%) no-repeat left bottom / 0 100%;
+            transition: background-size .5s;
+          }
+      
+      a:hover{
+            background-size: 100% 100%;
+          }
+        }   
+        
+@mixin soulignement_delice{
+      
+      a { 
+            color: inherit;
+            text-decoration: none;
+            background: linear-gradient(to top,$soulign_sous_titre_delice,transparent 10.01%) no-repeat left bottom / 0 100%;
+            transition: background-size .5s;
+          }
+      
+      a:hover{
+            background-size: 100% 100%;
+          }
+        }
+@mixin soulignement_enchant{
+    a { 
+          color: inherit;
+          text-decoration: none;
+          background: linear-gradient(to top,$soulign_sous_titre_enchant,transparent 10.01%) no-repeat left bottom / 0 100%;
+          transition: background-size .5s;
+      }
+      a:hover{
+        background-size: 100% 100%;
+      }
+    }         
+       

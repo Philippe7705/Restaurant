@@ -87,18 +87,6 @@ header #search {
   padding-left: 30px;
   padding-right: 30px;
 }
-.carte a {
-  text-decoration: none;
-}
-.carte a:hover a {
-  color: inherit;
-  text-decoration: none;
-  background: linear-gradient(to top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  transition: background-size 0.5s;
-}
-.carte a:hover a:hover {
-  background-size: 100% 100%;
-}
 .carte .pos {
   display: flex;
   flex-direction: column;
@@ -221,13 +209,58 @@ header #search {
   justify-content: center;
   text-align: center;
 }
-.entrée .decor .nom_entrée a, .entrée .decor .nom_plat a, .entrée .decor .nom_dessert a, .plat .decor .nom_entrée a, .plat .decor .nom_plat a, .plat .decor .nom_dessert a, .dessert .decor .nom_entrée a, .dessert .decor .nom_plat a, .dessert .decor .nom_dessert a {
+.entrée .decor .nom_entrée.chic.un a, .entrée .decor .nom_plat.chic.un a, .entrée .decor .nom_dessert.chic.un a, .plat .decor .nom_entrée.chic.un a, .plat .decor .nom_plat.chic.un a, .plat .decor .nom_dessert.chic.un a, .dessert .decor .nom_entrée.chic.un a, .dessert .decor .nom_plat.chic.un a, .dessert .decor .nom_dessert.chic.un a {
   color: inherit;
   text-decoration: none;
-  background: linear-gradient(to top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #d8852e 0%, #d8852e 10%, transparent 10.01%) no-repeat left bottom/0 100%;
   transition: background-size 0.5s;
 }
-.entrée .decor .nom_entrée a:hover, .entrée .decor .nom_plat a:hover, .entrée .decor .nom_dessert a:hover, .plat .decor .nom_entrée a:hover, .plat .decor .nom_plat a:hover, .plat .decor .nom_dessert a:hover, .dessert .decor .nom_entrée a:hover, .dessert .decor .nom_plat a:hover, .dessert .decor .nom_dessert a:hover {
+.entrée .decor .nom_entrée.chic.un a:hover, .entrée .decor .nom_plat.chic.un a:hover, .entrée .decor .nom_dessert.chic.un a:hover, .plat .decor .nom_entrée.chic.un a:hover, .plat .decor .nom_plat.chic.un a:hover, .plat .decor .nom_dessert.chic.un a:hover, .dessert .decor .nom_entrée.chic.un a:hover, .dessert .decor .nom_plat.chic.un a:hover, .dessert .decor .nom_dessert.chic.un a:hover {
+  background-size: 100% 100%;
+}
+.entrée .decor .nom_entrée.chic.deux a, .entrée .decor .nom_plat.chic.deux a, .entrée .decor .nom_dessert.chic.deux a, .plat .decor .nom_entrée.chic.deux a, .plat .decor .nom_plat.chic.deux a, .plat .decor .nom_dessert.chic.deux a, .dessert .decor .nom_entrée.chic.deux a, .dessert .decor .nom_plat.chic.deux a, .dessert .decor .nom_dessert.chic.deux a {
+  color: inherit;
+  text-decoration: none;
+  background: linear-gradient(to top, #a6679a 0%, #a6679a 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.entrée .decor .nom_entrée.chic.deux a:hover, .entrée .decor .nom_plat.chic.deux a:hover, .entrée .decor .nom_dessert.chic.deux a:hover, .plat .decor .nom_entrée.chic.deux a:hover, .plat .decor .nom_plat.chic.deux a:hover, .plat .decor .nom_dessert.chic.deux a:hover, .dessert .decor .nom_entrée.chic.deux a:hover, .dessert .decor .nom_plat.chic.deux a:hover, .dessert .decor .nom_dessert.chic.deux a:hover {
+  background-size: 100% 100%;
+}
+.entrée .decor .nom_entrée.chic.trois a, .entrée .decor .nom_plat.chic.trois a, .entrée .decor .nom_dessert.chic.trois a, .plat .decor .nom_entrée.chic.trois a, .plat .decor .nom_plat.chic.trois a, .plat .decor .nom_dessert.chic.trois a, .dessert .decor .nom_entrée.chic.trois a, .dessert .decor .nom_plat.chic.trois a, .dessert .decor .nom_dessert.chic.trois a {
+  color: inherit;
+  text-decoration: none;
+  background: linear-gradient(to top, #6e4bce 0%, #6e4bce 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.entrée .decor .nom_entrée.chic.trois a:hover, .entrée .decor .nom_plat.chic.trois a:hover, .entrée .decor .nom_dessert.chic.trois a:hover, .plat .decor .nom_entrée.chic.trois a:hover, .plat .decor .nom_plat.chic.trois a:hover, .plat .decor .nom_dessert.chic.trois a:hover, .dessert .decor .nom_entrée.chic.trois a:hover, .dessert .decor .nom_plat.chic.trois a:hover, .dessert .decor .nom_dessert.chic.trois a:hover {
+  background-size: 100% 100%;
+}
+.entrée .decor .nom_entrée.delice a, .entrée .decor .nom_plat.delice a, .entrée .decor .nom_dessert.delice a, .plat .decor .nom_entrée.delice a, .plat .decor .nom_plat.delice a, .plat .decor .nom_dessert.delice a, .dessert .decor .nom_entrée.delice a, .dessert .decor .nom_plat.delice a, .dessert .decor .nom_dessert.delice a {
+  color: inherit;
+  text-decoration: none;
+  background: linear-gradient(to top, #0645e5 0%, #1b91fa 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.entrée .decor .nom_entrée.delice a:hover, .entrée .decor .nom_plat.delice a:hover, .entrée .decor .nom_dessert.delice a:hover, .plat .decor .nom_entrée.delice a:hover, .plat .decor .nom_plat.delice a:hover, .plat .decor .nom_dessert.delice a:hover, .dessert .decor .nom_entrée.delice a:hover, .dessert .decor .nom_plat.delice a:hover, .dessert .decor .nom_dessert.delice a:hover {
+  background-size: 100% 100%;
+}
+.entrée .decor .nom_entrée.palette a, .entrée .decor .nom_plat.palette a, .entrée .decor .nom_dessert.palette a, .plat .decor .nom_entrée.palette a, .plat .decor .nom_plat.palette a, .plat .decor .nom_dessert.palette a, .dessert .decor .nom_entrée.palette a, .dessert .decor .nom_plat.palette a, .dessert .decor .nom_dessert.palette a {
+  color: inherit;
+  text-decoration: none;
+  background: linear-gradient(to top, #42973c 0%, #42973c 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.entrée .decor .nom_entrée.palette a:hover, .entrée .decor .nom_plat.palette a:hover, .entrée .decor .nom_dessert.palette a:hover, .plat .decor .nom_entrée.palette a:hover, .plat .decor .nom_plat.palette a:hover, .plat .decor .nom_dessert.palette a:hover, .dessert .decor .nom_entrée.palette a:hover, .dessert .decor .nom_plat.palette a:hover, .dessert .decor .nom_dessert.palette a:hover {
+  background-size: 100% 100%;
+}
+.entrée .decor .nom_entrée.enchant a, .entrée .decor .nom_plat.enchant a, .entrée .decor .nom_dessert.enchant a, .plat .decor .nom_entrée.enchant a, .plat .decor .nom_plat.enchant a, .plat .decor .nom_dessert.enchant a, .dessert .decor .nom_entrée.enchant a, .dessert .decor .nom_plat.enchant a, .dessert .decor .nom_dessert.enchant a {
+  color: inherit;
+  text-decoration: none;
+  background: linear-gradient(to top, #3c1218 0%, #3c1218 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+.entrée .decor .nom_entrée.enchant a:hover, .entrée .decor .nom_plat.enchant a:hover, .entrée .decor .nom_dessert.enchant a:hover, .plat .decor .nom_entrée.enchant a:hover, .plat .decor .nom_plat.enchant a:hover, .plat .decor .nom_dessert.enchant a:hover, .dessert .decor .nom_entrée.enchant a:hover, .dessert .decor .nom_plat.enchant a:hover, .dessert .decor .nom_dessert.enchant a:hover {
   background-size: 100% 100%;
 }
 
