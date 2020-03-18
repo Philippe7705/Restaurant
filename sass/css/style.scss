@@ -27,7 +27,7 @@ body{
     width: 100%;
     margin: auto;
     height: auto;
- }
+}
 header{
     background: #579c87;
     width: 100%;
@@ -58,7 +58,6 @@ header{
         font-size: 16px;
         color: #4b4b4b;
     }  
-
 }    
     #logo{
         width: 100%;
@@ -67,9 +66,7 @@ header{
         h1{
             display: none;  
         }
-               
     }
-
 
 #contener{
     width: 75%;
@@ -86,7 +83,6 @@ header{
         display: flex;
         flex-direction: row;
         margin-left: 80px;
-          
     }  
         .menu { 
             display: flex;
@@ -102,9 +98,10 @@ header{
             a:link{
                 text-decoration: none;
             }
-        }              
-        .menu.grow a{ transition: all .5s ease-in-out; }
-        .menu.grow:hover a{ transform: scale(1.4); opacity: 0.5;}
+        }
+
+    .menu.grow a{ transition: all .5s ease-in-out; }
+    .menu.grow:hover a{ transform: scale(1.4); opacity: 0.5;}
 
             .titre{
                 font-size: 50px;
@@ -118,22 +115,19 @@ header{
                 color: $note-couleur_police;
                 font-size: 50px;
                 text-align: center;
-                
             }    
             .chic ,.delice,.palette {
                 .note{
                     display: none;
                 }    
-                
             }
-           
             .chic {
                 background: $chic-couleur_fond_menu;
                 .titre{
-                font-family:$chic-police_titre;
-                word-spacing: -4px;
-                font-size: 28px;
-                @include chic;
+                    font-family:$chic-police_titre;
+                    word-spacing: -4px;
+                    font-size: 28px;
+                    @include chic;
                 }
                 .sous_titre{
                     font-family: $chic-police_sous_titre;
@@ -151,14 +145,13 @@ header{
                     font-family: $delice-police_sous_titre;
                     color: $delice-couleur_police;
                 }
-
             }
             .palette{
                 background: $palette-couleur_fond_menu;
                 .titre{
-                font-family:$palette-police_titre;
-                font-size: 30px;
-                @include palette;
+                    font-family:$palette-police_titre;
+                    font-size: 30px;
+                    @include palette;
                 }
                 .sous_titre{
                     font-family: $palette-police_sous_titre;
@@ -183,7 +176,7 @@ header{
             border-radius: 15px;
             padding:10px;
             @include transform-btn;     
-    } 
+        } 
 }
 
 #bas{
@@ -219,7 +212,7 @@ header{
             height: 500px;
             width: 44%;
         }
-}
+    }
 }
 @media all and (max-width: 768px){
 #contener{
@@ -227,8 +220,6 @@ header{
             font-size: 27px;
         }
     }
-    .menu.grow a{ transition: all 500s ease-in-out; }
-    .menu.grow a{ transform: scale(1.1); opacity: 0.5; } 
 }
 @media all and (max-width: 666px){
     header{
@@ -242,16 +233,16 @@ header{
         .note{
             margin-left: 33px;
         }
-    .menu{
-        width: 90%;
-        margin-top: 20px;
-       }
+        .menu{
+            width: 90%;
+            margin-top: 20px;
+        }
        .titre{
-        font-size: 40px;
-    }
-    .menu.chic .titre,.menu.palette .titre,menu.delice .titre{
-        font-size: 25px;
-    }
+            font-size: 40px;
+        }
+        .menu.chic .titre,.menu.palette .titre,menu.delice .titre{
+            font-size: 25px;
+        }
     }
     #bas p{
         font-size: 20px;
