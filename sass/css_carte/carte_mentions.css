@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-size: 18px;
   width: 100%;
@@ -51,9 +52,19 @@ header #search {
   flex-direction: column;
 }
 
-.titre, .sous_titre {
+.titre {
   display: flex;
   justify-content: center;
+  box-shadow: 0px 0px 5px #a1a1a1;
+  width: 50%;
+  margin: auto;
+}
+
+.sous_titre {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 5px #a1a1a1;
+  width: 50%;
 }
 
 article {
@@ -65,6 +76,21 @@ article {
 article h3, article p {
   justify-content: center;
   display: flex;
+}
+article h3 {
+  box-shadow: 0px 0px 5px #a1a1a1;
+}
+
+.entité {
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+}
+.entité .box {
+  width: 40%;
+  justify-content: space-around;
+  width: 20%;
+  margin-bottom: 100px;
 }
 
 #bas {
