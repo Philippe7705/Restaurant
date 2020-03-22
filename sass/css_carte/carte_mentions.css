@@ -50,47 +50,54 @@ header #search {
 #contener {
   display: flex;
   flex-direction: column;
-}
-
-.titre {
-  display: flex;
-  justify-content: center;
-  box-shadow: 0px 0px 5px #a1a1a1;
-  width: 50%;
+  width: 60%;
   margin: auto;
 }
-
-.sous_titre {
+#contener .titre {
   display: flex;
   justify-content: center;
   box-shadow: 0px 0px 5px #a1a1a1;
-  width: 50%;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
-
-article {
+#contener .sous_titre {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+#contener article {
   display: flex;
   flex-direction: column;
   width: 60%;
   margin: auto;
 }
-article h3, article p {
+#contener article h3, #contener article p {
   justify-content: center;
   display: flex;
 }
-article h3 {
+#contener article h3 {
   box-shadow: 0px 0px 5px #a1a1a1;
 }
-
-.entité {
+#contener .entité {
   display: flex;
   flex-direction: row;
-  height: 20px;
+  width: 100%;
+  margin: auto;
+  align-content: center;
 }
-.entité .box {
-  width: 40%;
-  justify-content: space-around;
-  width: 20%;
-  margin-bottom: 100px;
+#contener .entité .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+}
+#contener .entité .box h3 {
+  align-content: center;
+  margin: 0px;
 }
 
 #bas {
@@ -154,6 +161,48 @@ article h3 {
   }
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@media all and (max-width: 768px) {
+  #contener {
+    width: 100%;
+  }
+  #contener .box h3 {
+    margin-top: 0px;
+  }
+}
+@media all and (max-width: 600px) {
+  a img {
+    width: 90%;
+    margin: 10px;
+  }
+
+  .titre {
+    width: 268px;
+    font-size: 25px;
+  }
+
+  #contener {
+    width: 100%;
+  }
+  #contener article, #contener h3, #contener p {
+    width: 97%;
+  }
+  #contener h3 {
+    font-size: 20px;
+  }
+  #contener .box {
+    margin-top: 0px;
+    margin-bottom: 60px;
+  }
+  #contener .box h3 {
+    margin-bottom: 0px;
+  }
+
+  #bas p {
+    font-size: 20px;
+    width: 100%;
   }
 }
 
