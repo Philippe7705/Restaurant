@@ -121,17 +121,16 @@ header{
             align-content: center;
         } 
     }
-        .note{
-            display: flex;
-            justify-content: center;
-            img{
-                width:60%;
-                height: 100px;
+    .note{
+        display: flex;
+        justify-content: center;
+        img{
+            width:60%;
+            height: 100px;
+            margin-top: 20px;
                 
-                margin-top: 20px;
-                
-            }
         }
+    }
         .titre.chic{
             font-family: $chic-police_titre;
             font-size:48px;
@@ -416,6 +415,9 @@ header{
                 font-size: 14px;
             }
         }
+    }
+    .bouton .btn{
+        width:51%;
     }
     .bas_carte h3{
         font-size: 26px;

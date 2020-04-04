@@ -77,13 +77,13 @@ header{
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    .note{
-        width: 180px;
-        height: 100px;
-        display: flex;
-        flex-direction: row;
-        margin-left: 80px;
-    }  
+        .note{
+            width: 180px;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            margin-left: 80px;
+        }  
         .menu { 
             display: flex;
             flex-direction: column;
@@ -100,8 +100,6 @@ header{
             }
         }
 
-    .menu.grow a{ transition: all .5s ease-in-out; }
-    .menu.grow:hover a{ transform: scale(1.4); opacity: 0.5;}
 
             .titre{
                 font-size: 50px;
@@ -137,9 +135,9 @@ header{
             .delice {
                 background: $delice-couleur_fond_menu;
                 .titre{
-                font-family:$delice-police_titre;
-                font-size: 38px;
-                @include delice;
+                    font-family:$delice-police_titre;
+                    font-size: 38px;
+                    @include delice;
                 }
                 .sous_titre{
                     font-family: $delice-police_sous_titre;
@@ -158,7 +156,8 @@ header{
                     color: $palette-couleur_police;
                 }
             }
-            
+    .menu.grow a{ transition: all .5s ease-in-out; }
+    .menu.grow:hover a{ transform: scale(1.4); opacity: 0.5;}
 
 }   
 .bouton{

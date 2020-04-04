@@ -478,6 +478,10 @@ header #search {
     font-size: 14px;
   }
 
+  .bouton .btn {
+    width: 51%;
+  }
+
   .bas_carte h3 {
     font-size: 26px;
   }
