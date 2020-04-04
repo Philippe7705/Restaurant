@@ -219,6 +219,9 @@ header{
             font-size: 27px;
         }
     }
+    .btn{
+        width: 27%;
+    }
 }
 @media all and (max-width: 666px){
     header{
@@ -242,6 +245,9 @@ header{
         .menu.chic .titre,.menu.palette .titre,menu.delice .titre{
             font-size: 25px;
         }
+    }
+    .btn{
+        width: 50%;
     }
     #bas p{
         font-size: 20px;

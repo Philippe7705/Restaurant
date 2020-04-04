@@ -268,6 +268,10 @@ header #search {
   #contener .chic .titre {
     font-size: 27px;
   }
+
+  .btn {
+    width: 27%;
+  }
 }
 @media all and (max-width: 666px) {
   header {
@@ -291,6 +295,10 @@ header #search {
   }
   #contener .menu.chic .titre, #contener .menu.palette .titre, #contener menu.delice .titre {
     font-size: 25px;
+  }
+
+  .btn {
+    width: 50%;
   }
 
   #bas p {
