@@ -154,7 +154,7 @@ header #search {
 }
 
 .entrée .trait.enchant, .plat .trait.enchant, .dessert .trait.enchant {
-  width: 60%;
+  width: 45%;
   height: 55px;
 }
 .entrée .trait.chic, .plat .trait.chic, .dessert .trait.chic {
